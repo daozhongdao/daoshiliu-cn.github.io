@@ -1,19 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>道始流 · 建设中</title>
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dao始流</title>
     <style>
-        body { text-align: center; padding: 50px; font-family: system-ui; }
-        h1 { font-weight: 300; }
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            background: #f9fafc;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+            color: #1e293b;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 28px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+            padding: 40px 35px;
+        }
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 350;
+            text-align: center;
+            margin: 0 0 0.2em;
+            color: #0f172a;
+        }
+        .sub {
+            font-size: 1.2rem;
+            text-align: center;
+            color: #475569;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 1.5em;
+            margin-bottom: 2em;
+        }
+        .intro {
+            font-size: 1.1rem;
+            background: #f1f5f9;
+            border-radius: 24px;
+            padding: 28px;
+            margin-bottom: 2.5em;
+        }
+        .intro p {
+            margin: 0.8em 0;
+        }
+        .intro strong {
+            color: #1e293b;
+        }
+        .notice {
+            font-size: 0.9rem;
+            color: #64748b;
+            background: #f8fafc;
+            border-left: 4px solid #94a3b8;
+            padding: 12px 20px;
+            border-radius: 12px;
+            margin: 2em 0 1.5em;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #94a3b8;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 1.8em;
+            margin-top: 2.5em;
+        }
+        .back-link {
+            text-align: center;
+            margin: 2em 0 1em;
+        }
+        .back-link a {
+            color: #2563eb;
+            text-decoration: none;
+            border-bottom: 1px dotted #94a3b8;
+        }
+        /* Twikoo 容器 */
+        #twikoo {
+            margin-top: 2.5em;
+        }
+        @media (max-width: 600px) {
+            .container { padding: 25px 18px; }
+            h1 { font-size: 2.2rem; }
+        }
     </style>
 </head>
 <body>
-    <h1>道始流 · daoshiliu.cn</h1>
-    <p>网站正在建设中，备案通过后将正式上线。</p>
-    <p>敬请期待。</p>
-    <hr>
-    <p style="color: gray; font-size: 0.9rem;">陈有进 · 道始流</p>
+    <div class="container">
+        <h1>Dao始流</h1>
+        <div class="sub">Dao Origin Flow </div>
+
+        <div class="intro">
+            <p><strong>Dao始流</strong> 是我个人学习制作网站记录。</p>
+            <p>无论您来自哪个行业，对“Dao”的哲学、建设有何见解或疑问，未来等我学会制作网站再交流，谢谢理解。</p>
+            <p>这条道路前所未有，我愿与各界朋友在未来有机会的时候一同探索、共建，那时是我学会制作网站注册公司再升级备案后就可以完成的了，
+                也许几个月或许一两年了，静待花开时。</p>
+        </div>
+
+        <div class="notice">
+            💬 我珍视每一条真诚的建议。
+        </div>
+
+        <!-- Twikoo  -->
+        <div id="twikoo"></div>
+        <script src="https://cdn.jsdelivr.net/npm/twikoo@1.6.44/dist/twikoo.all.min.js"></script>
+        <script>
+            twikoo.init({
+                envId: 'daoshiliu-6ggdemuo0b4ebbe0',  // 您的腾讯云环境ID
+                el: '#twikoo'
+            });
+        </script>
+
+        <div class="back-link">
+            <a href="https://daozhongdao.org" target="_blank">返回Dao中道网站</a>
+        </div>
+
+        <div class="footer">
+            <p>Dao始流 · 个人学习制作·联系：微信：liuyanyanfu</p>
+        </div>
+    </div>
 </body>
 </html>
